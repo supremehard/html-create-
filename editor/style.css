@@ -1,0 +1,108 @@
+:root {
+  --primary-bg: #1e1e2f;
+  --panel-bg: #2a2a3d;
+  --border-color: #3c3c5a;
+  --text-color: #f1f1f1;
+  --title-color: #66ccff;
+  --button-bg: #007acc;
+  --button-hover-bg: #005f99;
+  --output-bg: #1b1b2e;
+  --output-title-color: #ff79c6;
+  --font: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-family: var(--font);
+}
+
+.main-title {
+  text-align: center;
+  color: var(--title-color);
+  background: linear-gradient(to right, #1e1e2f, #2a2a3d);
+  padding: 20px;
+  margin: 0;
+  font-size: 24px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 70px);
+  gap: 10px;
+  padding: 10px;
+}
+
+.panel {
+  flex: 1;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: var(--panel-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.panel-title {
+  margin-top: 0;
+  color: var(--title-color);
+  font-size: 18px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.output-title-text {
+  color: var(--output-title-color);
+  font-weight: 600;
+  font-style: italic;
+}
+
+#htmlCode {
+  flex-grow: 1;
+  background-color: #1c1c2e;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  color: #ffffff;
+  resize: none;
+  outline: none;
+}
+
+#runButton {
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#runButton:hover {
+  background-color: var(--button-hover-bg);
+}
+
+#runButton:active {
+  transform: scale(0.98);
+}
+
+#output {
+  flex-grow: 1;
+  background-color: var(--output-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}

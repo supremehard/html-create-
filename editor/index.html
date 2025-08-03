@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editor HTML Avançado</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <h1 class="main-title">Editor de HTML (com CSS & JS)</h1>
+
+  <div class="container">
+    <div class="panel input-panel">
+      <h2 class="panel-title">Seu Código</h2>
+      <textarea id="htmlCode"><title>Minha Página Nova!</title>
+
+<style>
+  body {  
+    background-color: #222;  
+    color: white;  
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  h1 { color: #00aaff; }
+</style>
+
+<h1>Título da Página Interna</h1>
+<p>Observe a aba do navegador!</p></textarea>
+      <button id="runButton">Executar Código</button>
+    </div>
+
+    <div class="panel output-panel">
+      <h2 class="panel-title">Visualização | Título Interno: <span id="output-title" class="output-title-text"></span></h2>
+      <iframe id="output" sandbox="allow-scripts allow-same-origin"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
